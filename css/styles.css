@@ -1,0 +1,145 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+@import url(https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400 
+);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*----------------------------------*/
+html {
+    box-sizing: border-box;
+    background-color:rgba(122,191,191,0.5)   
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0 auto;
+    min-width: 413px;
+    max-width: 414px;
+    background-color: #f2f2f2;
+    position: relative;
+    top: 100px;
+}
+h1, h2, h3, nav a, nav span, menu li, #social li, footer {
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+}
+p, dd, li, nav, input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+dt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 25px;
+}
+h1, h2 {
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+nav a, nav span, menu li, #social li, footer {
+    font-size: 20px;
+}
+#menu img {
+    max-width: 414px;
+}
+#menu p {
+    padding: 15px 10px;
+    line-height: 1.5;
+}
+#details dl {
+    padding-left: 10px;
+}
+#ingredients ul {
+    list-style-type: square;
+    padding-left: 25px;
+    line-height: 2;
+}
+#ingredients li {
+    text-indent: 10px;
+}
+#directions ol {
+    padding-left: 25px;
+    padding-right: 15px;
+    line-height: 1.5;
+}
+#directions li {
+    padding-bottom: 10px;
+}
+/*--------ASIDE SECTION----------*/
+aside {
+    background-color: #7abfbf;
+    padding-top: 5px;
+}
+.dishes img { 
+    margin-left: 10px;
+    width: 20%;
+}
+.dishes h3 {
+    transform: translate(120px, 25px);
+
+}
+.dishes p {
+    transform: translate(120px, -50px)
+}
+/*--------MAIN NAVIGATION-----------*/
+nav {
+    position: absolute;
+    top: -100px;
+}
+
+/*--------FOOTER-----------*/
