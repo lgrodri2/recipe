@@ -78,7 +78,8 @@ dt {
 h1 {
     font-size: 40px;
     text-align: center;
-    margin-top: 10px;
+    padding-top: 200px;
+    padding-bottom: 25px;
 }
 h2 {
     font-size: 30px;
@@ -93,8 +94,7 @@ nav a, nav span, menu li, #social li, footer, #footer p {
     font-size: 20px;
 }
 header {
-    padding-top: 100px;
-    padding-bottom: 25px;
+ 
 }
 /*------------MENU------------*/
 menu {
@@ -197,7 +197,10 @@ aside {
 /*--------MAIN NAVIGATION-----------*/
 nav {
     position: absolute;
-    top: 0;
+    top: 15px;
+}
+nav h2 {
+    position: absolute;
 }
 nav h2, nav img {
     visibility: hidden;
@@ -219,8 +222,8 @@ label span {
     display: block;
     height: 0;
     position: relative;
-    transition: background-color .2s ease-out;
-    width: 18px;
+
+    text-align: center;
 }
 label span:before, label span:after {
     background: #ffffff;
@@ -258,7 +261,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 /*--------SEARCH BAR-------*/
 #searchbar {
     position: absolute;
-    top: 20px;
+    top: 100px;
     right: 25%;
 }
 .search {
