@@ -290,16 +290,15 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 [href="#signup"] svg {
     stroke: #EB5428;
 }
-
-
 /*--------SEARCH BAR-------*/
 #searchbar {
     position: absolute;
     top: 100px;
-    right: 25%;
+    width: 414px;
 }
 .search {
     display: inline-flex;
+    transform: translateX(40px)
 }
 #searchbar h3 {
     visibility: hidden;
