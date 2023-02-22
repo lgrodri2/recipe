@@ -210,7 +210,7 @@ nav ul {
 label {
     cursor: pointer;
     display: inline-block;
-    padding: 28px 20px;
+    padding-left: 30px;
     position: relative;
     user-select: none;
 }
