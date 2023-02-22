@@ -61,7 +61,7 @@ body {
     max-width: 414px;
     background-color: #f2f2f2;
 }
-h1, h2, h3, nav a, nav span, menu li, #social li, footer {
+h1, h2, h3, nav a, nav span, menu li, #social li, footer, #footer p {
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
 }
@@ -77,46 +77,73 @@ dt {
 }
 h1 {
     font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
 }
 h2 {
     font-size: 30px;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 10px;
 }
 h3 {
     font-size: 25px;
 }
-h1, h2 {
-    text-align: center;
-    padding-bottom: 15px;
-    padding-top: 5px;
-}
-nav a, nav span, menu li, #social li, footer {
+nav a, nav span, menu li, #social li, footer, #footer p {
     font-size: 20px;
 }
-/*-------MENU-----------------*/
+header {
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+/*------------MENU------------*/
 menu {
     display: inline-flex;
     list-style: none;
-
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+menu a {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-decoration: none;
+    color: #EB5428;
 }
 menu li {
     margin-bottom: 10px;
-    
 }
-menu a {
-    text-decoration: none;
-    color: #EB5428;  
-}
-
 #menu img {
     max-width: 414px;
 }
-#menu p {
-    padding: 15px 10px;
+menu a:hover {
+    color: #f2f2f2;
+}
+menu span:hover {
+    background-color: #EB5428;
+    transition: all .2s ease-in;
+}
+menu svg {
+    background-color: inherit;
+}
+#streettacos img {
+    max-width: 414px;
+}
+#streettacos p {
+    padding: 10px 10px;
     line-height: 1.5;
 }
+/*--------DETAILS---------------*/
 #details dl {
+    width: 55%;
+}
+dt, dd {  
+    display: inline-block;
+    margin: 0 0 0.5rem 0;
     padding-left: 10px;
 }
+/*--------INGREDIENTS----------*/
 #ingredients ul {
     list-style-type: square;
     padding-left: 25px;
@@ -125,6 +152,7 @@ menu a {
 #ingredients li {
     text-indent: 10px;
 }
+/*--------DIRECTIONS------------*/
 #directions ol {
     padding-left: 25px;
     padding-right: 15px;
@@ -136,21 +164,42 @@ menu a {
 /*--------ASIDE SECTION----------*/
 aside {
     background-color: #7abfbf;
-    padding-top: 5px;
+}
+.dishes {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
 }
 .dishes img { 
     margin-left: 10px;
     width: 20%;
 }
 .dishes h3 {
-    transform: translate(120px, 25px);
-
+    transform: translate(115px, 25px);
 }
 .dishes p {
-    transform: translate(120px, -50px)
+    transform: translate(115px, -50px);
+    padding-bottom: 5px;
+}
+.rating {
+    font-weight: bold;
+}
+.dishes svg {
+    fill: #EB5428;
+}
+.whitestar svg:last-of-type {
+    fill: #ffffff;
+}
+.dishes svg {
+    transform: translate(115px, -50px);
+    padding-right: 3px;  
 }
 /*--------MAIN NAVIGATION-----------*/
-nav h2 {
+/*nav {
+    position: absolute;
+    top: 0;
+}
+nav h2, nav img {
     visibility: hidden;
 }
 nav ul {
@@ -168,7 +217,7 @@ label {
 label span {
     background-color: #ffffff;
     display: block;
-    height: 2px;
+    height: 0;
     position: relative;
     transition: background-color .2s ease-out;
     width: 18px;
@@ -188,7 +237,7 @@ label span:before {
 label span:after {
     top: -5px;
 }
-input {
+nav input {
     display: none;
 }
 input:checked ~ ul {
@@ -206,7 +255,97 @@ input:checked ~ label span:after {
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
-nav span {
+/*--------SEARCH BAR-------*/
+#searchbar {
+    position: absolute;
+    top: 20px;
+    right: 25%;
+}
+.search {
+    display: inline-flex;
+}
+#searchbar h3 {
     visibility: hidden;
 }
-/*--------FOOTER-----------*/
+#searchbar input {
+    border-color: #EB5428;
+    padding: 10px 100px 10px 0;
+    text-align: left;
+}
+#searchbar button {
+    border: none;
+    background-color: #EB5428;
+    padding: 0 5px;
+}
+#searchbar svg {
+    stroke: #f2f2f2;
+}
+/*-----SOCIAL MEDIA LINKS-----*/
+#social h2, #social h3 {
+    visibility: hidden;
+}
+#social ul {
+    display: inline-flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#social a {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-decoration: none;
+    color: #EB5428;
+}
+/*---------FOOTER-----------*/
+#footer h3 {
+    visibility: hidden;
+}
+#footer img {
+    width: 50%;
+    margin: 25px
+}
+#footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+/*------------MEDIA QUERIES--------------*/
+@media screen and (min-width:768px) {
+    body {
+        max-width: 768px;
+    }
+    #streettacos img {
+        max-width: 768px;
+    }
+    menu {
+        position: absolute;
+        background-color: rgba(255,255,255,0.5);
+        max-width: 768px;
+        padding: 10px 0 5px 0;
+        display: inline-flex;
+        justify-content: space-around;
+    }
+    h1 {
+        text-align: left;
+        padding-left: 20px   
+    }
+    #details dl {
+        width: 35%;
+        text-align: center;
+        margin: auto;
+    }
+    #ingredients, #directions {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    #ingredients {
+        width: 30%;
+    }
+    #directions {
+        width: 65%;
+        position: absolute;
+    
+    }
+} 
