@@ -315,6 +315,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 @media screen and (min-width:768px) {
     body {
         max-width: 768px;
+        position:relative;
     }
     #streettacos img {
         max-width: 768px;
@@ -344,8 +345,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         width: 30%;
     }
     #directions {
-        width: 65%;
-        position: absolute;
-    
+        width: 70%;
+        position: absolute;    
     }
 } 
