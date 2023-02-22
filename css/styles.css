@@ -197,7 +197,10 @@ aside {
 /*--------MAIN NAVIGATION-----------*/
 nav {
     position: absolute;
-    top: 15px;
+    top: 0;
+    background-color: #ffffff;
+    padding:10px 105px 10px 0;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.25);
 }
 nav h2 {
     position: absolute;
@@ -257,6 +260,38 @@ input:checked ~ label span:after {
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
+[href="#home"] {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    display:inline-flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color:#EB5428;
+    padding: 10px 80px 11px 80px;
+}
+.home {
+    visibility: hidden;
+    position: absolute
+}
+[href="#signup"] {
+    position: absolute;
+    top: 0;
+    display:inline-flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-decoration: none;
+    color:black;
+    background-color: #ffffff;
+    padding:15px 10px 6px 15px;
+    text-align: center;
+    transform: translateX(322px); 
+}
+[href="#signup"] svg {
+    stroke: #EB5428;
+}
+
+
 /*--------SEARCH BAR-------*/
 #searchbar {
     position: absolute;
