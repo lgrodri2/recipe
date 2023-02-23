@@ -257,6 +257,9 @@ input:checked ~ label span:after {
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
+nav li {
+    text-decoration: none;
+}
 [href="#home"] {
     position: absolute;
     top: 0;
@@ -316,6 +319,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 /*-----SOCIAL MEDIA LINKS-----*/
 #social h2, #social h3 {
     visibility: hidden;
+    padding: 0 0;
 }
 #social ul {
     display: inline-flex;
@@ -334,6 +338,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 /*---------FOOTER-----------*/
 #footer h3 {
     visibility: hidden;
+    position: absolute;
 }
 #footer img {
     width: 50%;
@@ -384,7 +389,32 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     .dishes {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
-         
+        height: 300px;
     }
-} 
+    .dishes h3 {
+        transform: translate(100px, 25px);
+    }
+    .dishes p {
+        transform: translate(100px, -50px);
+        padding-bottom: 5px;
+    }
+    .dishes svg {
+       transform: translate(100px, -50px);
+    }
+    .tortillas {
+        transform: translate(382px, -170px)
+    }
+    #social ul {
+        justify-content: right;
+    }
+    #social a {
+        padding-right: 30px;
+    }
+    #footer img {
+        width: 35%;   
+    }
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+    }    
+}
