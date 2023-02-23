@@ -349,7 +349,7 @@ nav li {
     flex-direction: column-reverse;
     align-items: center;
 }
-/*------------MEDIA QUERIES--------------*/
+/*------------MEDIA QUERIES--768px------------*/
 @media screen and (min-width:768px) {
     body {
         max-width: 768px;
@@ -367,6 +367,8 @@ nav li {
         justify-content: space-around;
     }
     h1 {
+        
+        padding-bottom: 10px;
         text-align: left;
         padding-left: 20px   
     }
@@ -411,10 +413,93 @@ nav li {
         padding-right: 30px;
     }
     #footer img {
-        width: 35%;   
+        width: 35%; 
+        padding-right: ;  
     }
     footer {
         display: flex;
         flex-direction: row-reverse;
-    }    
+    } 
+    [href="#signup"] {
+        padding:15px 10px 11px 15px;
+        text-align: center;
+        transform: translateX(676px);    
+    }
+    nav {
+        padding:0px 535px 170px 0;
+        box-shadow: 0px 3px 3px rgba(0,0,0,0.25);
+    }
+    [href="#home"] {
+        padding: 10px 10px 16px 10px;
+        left: 0;
+    }
+    .search {
+        transform: translate(330px, -100px)
+    }
 }
+/*------------MEDIA QUERIES--1280px------------*/
+@media screen and (min-width:1280px) {
+    body {
+        max-width: 1280px;
+        position: relative;
+    }
+    menu {
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 120px;
+        border-width: 2px;
+        border-color: #EB5428;
+        border-style: solid;
+        padding-bottom: 400px;
+        padding-top:40px;
+    }
+    menu a {
+        padding-bottom: 20px;
+    }
+    #streettacos img {
+        max-width: 536px;
+        margin-left: 120px;
+        position: relative;
+    }
+    #streettacos p:first-of-type {
+        position: absolute;
+    }
+    #streettacos p:last-of-type {
+        position: absolute;
+        top: 400px
+    }
+    #streettacos img, #streettacos p {
+        display: inline-flex;
+        flex-direction: column;
+    }
+    h1 {
+        text-align: center;
+        padding-top: 250px;
+    }
+    nav {
+        padding:0px 1000px 100px 0;
+    }
+    [href="#signup"] {    
+        transform: translate(1170px, 10px); 
+    }
+    [href="#home"] {
+        padding: 30px 30px 26px 30px;
+    }
+    .search {
+        transform: translate(500px, 50px)
+    }
+    #details {
+        background-color: black;
+        color: #7ABFBF;
+    }
+    #details dl {
+        width: 100%;
+        list-style: none; 
+        display: inline-block;
+    }   
+    dd, dt {
+        display: inline-flex;
+        flex-direction: column;
+    }
+}
+        
