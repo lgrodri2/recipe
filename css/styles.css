@@ -163,34 +163,34 @@ aside {
     background-color: #7abfbf;
 }
 .dishes {
+    height: 125px;
     display: inline-flex;
-    flex-direction: column;
-    width: 100%;
+    margin-top: 10px
 }
-.dishes img { 
+.imgsize img {
+    width: 100px;
     margin-left: 10px;
-    width: 20%;
+}
+.dishes h3, .dishes p {
+    margin-left: 20px;
+}
+.dishes h4, .dishes dd {
+    visibility: hidden;
+}
+.dishes a {
+    text-decoration: none;
+}
+.rating dl {
+    padding-left: 10px;
+}
+.rating svg {
+    transform: translateX(20px);
+    margin-right: 5px;
 }
 .dishes h3 {
-    transform: translate(115px, 25px);
+    padding-bottom: 10px;
 }
-.dishes p {
-    transform: translate(115px, -50px);
-    padding-bottom: 5px;
-}
-.rating {
-    font-weight: bold;
-}
-.dishes svg {
-    fill: #EB5428;
-}
-.whitestar svg:last-of-type {
-    fill: #ffffff;
-}
-.dishes svg {
-    transform: translate(115px, -50px);
-    padding-right: 3px;  
-}
+
 /*--------MAIN NAVIGATION-----------*/
 nav {
     position: absolute;
