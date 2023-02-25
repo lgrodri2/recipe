@@ -2,8 +2,7 @@
 v2.0 | 20110126
 License: none (public domain)
 */
-@import url(https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400 
-);
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -394,8 +393,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         display: inline-flex;
         justify-content: space-around;
     }
-    h1 {
-        
+    h1 { 
         padding-bottom: 10px;
         text-align: left;
         padding-left: 20px   
@@ -455,20 +453,37 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     }
     nav {
         width: 768px;
-        height: 180px;
-        padding:0px 535px 170px 0;
+        height: 190px;   
         box-shadow: 0px 3px 3px rgba(0,0,0,0.25);
     }
     nav img {
         display: block!important;
+        width: 50px;
+        transform: translateY(15px);
+    }
+    nav ul {
+        width:768px;
+        overflow: visible;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    nav a {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
     }
     [href="#home"] {
         padding: 10px 10px 16px 10px;
         left: 0;
     }
     .search {
+        position: absolute;
         transform: translate(330px, -100px);
         z-index: 1;
+    }
+    [href="#signup"] {
+        transform: translateX(-100px);
+        width: 100px
     }
 }
 /*------------MEDIA QUERIES--1280px------------*/
@@ -511,16 +526,24 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         padding-top: 250px;
     }
     nav {
-        padding:0px 1000px 100px 0;
+        width: 1280px;
+        height: 115px;
+    }
+    nav ul {
+        transform: translate(220px, -60px);
+    }
+    label span {
+        visibility: hidden;
     }
     [href="#signup"] {    
-        transform: translate(1170px, 10px);
+        transform: translate(150px,75px);
     }
     [href="#home"] {
         padding: 30px 30px 26px 30px;
+        transform: translate(-255px,60px);
     }
     .search {
-        transform: translate(500px, 50px)
+        transform: translate(500px, 50px);
     }
     #details {
         background-color: black;
@@ -554,4 +577,3 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
         transform: translate(180px, -200px);
     }
 }
-        
