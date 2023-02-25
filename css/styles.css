@@ -552,7 +552,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     #details dl {
         width: 100%;  
     }
-    aside {
+    .container {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
